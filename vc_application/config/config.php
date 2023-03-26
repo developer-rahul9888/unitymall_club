@@ -24,7 +24,7 @@ date_default_timezone_set('Asia/Kolkata');
 |
 */
 
-$config['base_url'] = 'https://www.unitymall.club/'; 
+$config['base_url'] = 'https://dev.unitymall.club/'; 
 //$config['sms_user'] = 'talenthunt';
 //$config['sms_pass'] = 'tal1234';
 //$config['sms_sndrid'] = 'TLTHNT';

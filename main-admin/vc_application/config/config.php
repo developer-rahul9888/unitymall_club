@@ -23,7 +23,7 @@ date_default_timezone_set('Asia/Kolkata');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'https://www.unitymall.club/main-admin/';
+$config['base_url'] = 'https://dev.unitymall.club/main-admin/';
 $config['sms_pass'] = '';
 /*
 |--------------------------------------------------------------------------
