@@ -1,0 +1,3273 @@
+
+/*
+
+==== CSS INDEX
+
+01 - IMPORTED CSS
+02 - DEFAULT CSS
+03 - PAGINATION CSS
+04 - BREADCROMB CSS
+05 - SITE PRELOADER CSS
+06 - BTN TO TOP CSS
+07 - REPONSIVE MENU CSS
+08 - HEADER TOP CSS
+09 - MAIN HEADER CSS
+10 - MAIN SLIDER CSS
+11 - SERVICE AREA CSS
+     11.1 - HOME PAGE 2 STYLE
+12 - ABOUT AREA CSS
+13 - PROJECT AREA CSS
+14 - QUOTES AREA CSS
+15 - CORE SERVICE CSS
+16 - FAQ CSS
+17 - TESTIMONIAL CSS
+18 - TEAM CSS
+19 - FOOTER AREA CSS
+20 - ABOUT PAGE CSS
+21 - SINGLE SERVICE PAGE CSS
+22 - PROJECT PAGE CSS
+23 - SINGLE PROJECT PAGE CSS
+24 - DEFAULT NEWS CSS
+25 - NEWS LIST CSS
+26 - NEWS GRID CSS
+27 - NEWS SIDEBAR CSS
+28 - SINGLE NEWS PAGE CSS
+29 - SHOP PAGE CSS
+30 - SINGLE SHOP PAGE CSS
+31 - CART PAGE CSS
+32 - CHECKOUT PAGE CSS
+33 - MYACCOUNT PAGE CSS
+34 - CONTACT PAGE ONE CSS
+35 - CONTACT PAGE TWO CSS
+36 - CONTACT PAGE THREE CSS
+
+*/
+
+
+/*================================================
+01 - IMPORTED CSS
+==================================================*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,700i');
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700');
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700');
+
+
+
+/*================================================
+02 - DEFAULT CSS
+==================================================*/ 
+
+body {
+    font-size: 15px;
+    line-height: 26px;
+    color: #555;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400
+}
+html,body { 
+    height: 100%
+}
+img {
+    max-width: 100%;
+    height: auto
+}
+.finance-btn:before {
+    background: #e69603   none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+    -webkit-transform-origin: 50% 0 0;
+        transform-origin: 50% 0 0;
+    -webkit-transition-duration: 0.5s;
+        transition-duration: 0.5s;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+    z-index: -1;
+    width: 100%
+}
+.finance-btn:hover:before{
+    -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+    -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+        transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+.finance-btn{
+    -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    border: 3px solid #e69603 ;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    color: #fff !important;
+    display: inline-block;
+    padding: 10px 20px;
+    position: relative;
+    text-transform: uppercase;
+    -webkit-transform: translateZ(0px);
+        transform: translateZ(0px);
+    -webkit-transition-duration: 0.5s;
+        transition-duration: 0.5s;
+    -webkit-transition-property: color;
+    transition-property: color;
+    vertical-align: middle;
+}
+.finance-white-btn:before {
+    background: #fff none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+    -webkit-transform-origin: 50% 0 0;
+        transform-origin: 50% 0 0;
+    -webkit-transition-duration: 0.5s;
+        transition-duration: 0.5s;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+    z-index: -1;
+    width: 100%;
+    color: #000 !important
+}
+.finance-white-btn:hover:before{
+    -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+    -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+        transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    color: #000 !important
+}
+.finance-white-btn{
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    border: 3px solid #fff;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    display: inline-block;
+    font-weight: 500;
+    margin-top: 40px;
+    padding: 10px 20px;
+    position: relative;
+    text-transform: uppercase;
+    -webkit-transform: translateZ(0px);
+            transform: translateZ(0px);
+    -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+    -webkit-transition-property: color;
+    transition-property: color;
+    vertical-align: middle;
+    color: #fff
+}
+.finance-section-title-center{
+    text-align: center
+}
+.finance-section-title-center > .title-line{
+    margin: 0 auto
+}
+.finance-section-title, .finance-section-title-center {
+    margin-bottom: 0px;
+    position: relative
+}
+.finance-section-title > img {
+    height: auto;
+    left: 100px;
+    opacity: 0.23;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=23)";
+    position: absolute;
+    top: -14px;
+    width: 85px;
+    z-index: -1;
+}
+.finance-section-title > h3, .finance-section-title-center > h3 {
+    color: #444444;
+    font-family: "Poppins",sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+.title-line {
+    background: #e69603 none repeat scroll 0 0;
+    height: 3px;
+    width: 100px;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+a{
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    color: inherit
+}
+a:focus {
+    text-decoration: none;
+    outline: medium none;
+    color: inherit
+}
+a:hover {
+    color: inherit;
+    text-decoration: none;
+    color: inherit
+}
+ul, ol {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style-type: none;
+}
+.section_100 {
+    padding: 100px 0;
+}
+.section_50 {
+    padding: 50px 0;
+}
+.section_15{
+    padding: 15px 0
+}
+.section_25{
+    padding: 25px 0
+}
+.section_t_100{
+    padding-top: 100px
+}
+.section_b_70{
+    padding-bottom: 70px
+}
+.section_70{
+    padding: 70px 0
+}
+
+/*================================================
+03 - PAGINATION CSS
+==================================================*/ 
+
+.pagination {
+    margin: 50px 0 0;
+}
+.pagination-box {
+    text-align: center;
+}
+.pagination a {
+    color: #555 !important;
+    border: 1px solid #e69603  !important
+}
+.pagination .active > a, .pagination a:hover {
+    background: #e69603 none repeat scroll 0 0 !important; 
+    color: #fff !important
+}
+
+
+/*================================================
+04 - BREADCROMB CSS
+==================================================*/ 
+.finance-breadcromb-area {
+    background: #eee none repeat scroll 0 0;
+}
+.breadcromb-left {
+    text-align: left;
+}
+.breadcromb-right {
+    text-align: right;
+}
+.breadcromb-left > h3 {
+    color: #555;
+    font-size: 25px;
+    text-transform: capitalize;
+}
+.breadcromb-right li {
+    display: inline-block;
+    margin: 0 3px;
+    text-transform: capitalize
+}
+.breadcromb-right a {
+    color: #000;
+}
+.breadcromb-right a i{
+    margin-right: 5px;
+    color: #e69603 
+}
+.breadcromb-right a:hover{
+    color: #e69603 
+}
+
+/*================================================
+05 - SITE PRELOADER CSS
+==================================================*/
+
+.finance-site-preloader {
+    background: #e69603 none repeat scroll 0 0;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 999999;
+}
+.sk-cube-grid {
+    height: 40px;
+    left: 50%;
+    margin: -20px 0 0 -20px;
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    -webkit-transition: .5s;
+    transition: .5s;    
+}
+
+.sk-cube-grid .sk-cube {
+    width: 33%;
+    height: 33%;
+    background-color: #fff;
+    float: left;
+    -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+    animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out; 
+}
+.sk-cube-grid .sk-cube1 {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s; }
+.sk-cube-grid .sk-cube2 {
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s; }
+.sk-cube-grid .sk-cube3 {
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s; }
+.sk-cube-grid .sk-cube4 {
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s; }
+.sk-cube-grid .sk-cube5 {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s; }
+.sk-cube-grid .sk-cube6 {
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s; }
+.sk-cube-grid .sk-cube7 {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s; }
+.sk-cube-grid .sk-cube8 {
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s; }
+.sk-cube-grid .sk-cube9 {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s; }
+
+@keyframes sk-cubeGridScaleDelay {
+    0%, 70%, 100% {
+        -webkit-transform: scale3D(1, 1, 1);
+        transform: scale3D(1, 1, 1);
+    } 35% {
+        -webkit-transform: scale3D(0, 0, 1);
+        transform: scale3D(0, 0, 1); 
+    }
+}
+
+@keyframes sk-cubeGridScaleDelay {
+    0%, 70%, 100% {
+        -webkit-transform: scale3D(1, 1, 1);
+        transform: scale3D(1, 1, 1);
+    } 35% {
+        -webkit-transform: scale3D(0, 0, 1);
+        transform: scale3D(0, 0, 1); 
+    }
+}
+
+@keyframes sk-cubeGridScaleDelay {
+    0%, 70%, 100% {
+        -webkit-transform: scale3D(1, 1, 1);
+        transform: scale3D(1, 1, 1);
+    } 35% {
+        -webkit-transform: scale3D(0, 0, 1);
+        transform: scale3D(0, 0, 1);
+    } 
+}
+
+/*================================================
+06 - BTN TO TOP CSS
+==================================================*/
+
+.btntoTop:before {
+    color: #fff;
+    content: "ï„†";
+    display: inline-block;
+    font: 20px "FontAwesome";
+    vertical-align: middle;
+}
+.btntoTop {
+    background-color: #2c3e50;
+    border: 2px solid #2c3e50;
+    border-radius: 2px;
+    bottom: 30px;
+    cursor: pointer;
+    height: 44px;
+    line-height: 36px;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    position: fixed;
+    right: 30px;
+    text-align: center;
+    -webkit-transition: opacity 0.4s ease 0s;
+    transition: opacity 0.4s ease 0s;
+    width: 44px;
+    z-index: 999;
+}
+.btntoTop.active {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s
+}
+.btntoTop.active:hover {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 2px solid #e69603;
+    opacity: 0.8;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+}
+.btntoTop.active.btntoTop:hover:before {
+    color: #e69603;
+}
+
+/*================================================
+07 - REPONSIVE MENU CSS
+==================================================*/ 
+.finance-responsive-menu{
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0px;
+    width: 100%;
+    z-index: 999;
+}
+.slicknav_nav a{
+    font-size: 16px;
+    margin: 0;
+    text-transform: capitalize;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    color: #000
+}
+.slicknav_menu {
+    background: transparent;
+}
+.slicknav_menutxt {
+    display: none !important;
+}
+.slicknav_arrow {
+    float: right;
+    color: #000
+}
+.slicknav_nav a:hover{
+    border-radius: 0;
+}
+.slicknav_nav .slicknav_row:hover{
+    border-radius: 0
+}
+.slicknav_nav a:hover, .slicknav_nav .slicknav_row:hover {
+    background: #e69603 none repeat scroll 0 0;
+    color: #fff !important
+}
+.slicknav_nav li {
+    border-bottom: 1px solid #aaa;
+}
+.slicknav_nav li:last-child{
+    border-bottom: 0px solid #aaa
+}
+.slicknav_menu ul li a i {
+    display: none;
+}
+.slicknav_nav {
+    background: #fff none repeat scroll 0 0;
+    border-top: 1px solid #e69603 ;
+}
+.slicknav_btn{
+    margin-bottom: 15px;
+    margin-right: 20px;
+    background-color: #000 !important;
+    line-height: 0;
+    margin-top: 20px
+}
+.slicknav_menu .slicknav_icon {
+    float: none !important;
+    margin: 0
+}
+.slicknav_icon-bar {
+    height: 3px !important;
+    margin: 5px 0;
+    width: 30px !important;
+}
+.slicknav_menu .slicknav_icon-bar {
+    background-color: #fff ;
+}
+
+/*================================================
+08 - HEADER TOP CSS
+==================================================*/ 
+
+.finance-header-top-area {
+    background: #212121 none repeat scroll 0 0;
+    color: #eee;
+    font-size: 13px;
+    padding: 8px;
+}
+.header-top-language > p {
+    display: inline-block;
+    text-transform: capitalize
+}
+.header-top-language .dropdown {
+    color: #000;
+    display: inline-block;
+    padding-left: 10px;
+}
+.header-top-language > .dropdown > #dropdownlang {
+    background: #fff none repeat scroll 0 0;
+    border: medium none;
+    color: #000;
+    font-size: 13px;
+    font-weight: 500
+}
+.dropdown-menu {
+    margin-left: 10px;
+    min-width: 105px;
+}
+.dropdown-menu > li {
+    border-bottom: 1px dashed #999;
+    cursor: pointer;
+    padding: 0px 10px;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s
+}
+.dropdown-menu > li:last-child{
+    border-bottom: 0px dashed #999;
+}
+.dropdown-menu > li:hover{
+    color: #e69603 
+}
+.header-top-right {
+    float: right;
+}
+.single-top-right {
+    display: inline-block;
+    padding-right: 25px;
+    margin: 0
+}
+.single-top-right > p {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+/*================================================
+09 - MAIN HEADER CSS
+==================================================*/
+
+header .finance-logo {
+    height: 100%;
+    margin: 0;
+    padding: 12px 30px 12px 0;
+    position: relative;
+}
+.finance-logo > a > img {
+    position: relative;
+    z-index: 9999;
+}
+.finance-mainmenu ul {
+    text-align: right;
+}
+.finance-mainmenu ul li {
+    display: inline-block;
+    position: relative
+}
+.finance-mainmenu ul li a {
+    color: #000;
+    display: block;
+    padding: 31px 10px;
+    text-transform: capitalize;
+    font-size: 13.7px
+}
+.finance-mainmenu ul .current-page-item > a, .finance-mainmenu ul li a:hover {
+    color: #e69603 !important;
+}
+.finance-mainmenu ul li ul{
+    background:#2b2c36 none repeat scroll 0 0;
+    border-top: 5px solid #e69603;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    position: absolute;
+    top: 100%;
+    -webkit-transform:scaleY(0);
+            transform:scaleY(0);
+    -webkit-transform-origin: 50% 0 0;
+            transform-origin: 50% 0 0;
+    -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
+    visibility: hidden;
+    width: 215px;
+    text-align: left;
+    z-index: 99
+}
+.finance-mainmenu ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -webkit-transform:scaleY(1);
+            transform:scaleY(1);
+    -webkit-transition-timing-function: cubic-bezier(.52, 1.64, .85, .92);
+            transition-timing-function: cubic-bezier(.52, 1.64, .85, .92)
+}
+.finance-mainmenu ul li:nth-last-child(-n+2) ul {
+    left: auto;
+    right: 0;
+}
+.finance-mainmenu ul li ul li {
+    border-bottom: 1px solid #555;
+    display: block;
+}
+.seacrh_li{
+    display: block
+}
+.finance-mainmenu ul li ul li:last-child {
+    border-bottom: 0px solid #555;
+}
+.finance-mainmenu ul li ul li a {
+    display: block;
+    padding: 10px 15px;
+    text-transform: capitalize;
+    color: #fff !important
+}
+.finance-mainmenu ul li ul li a:hover{
+    background: #e69603 none repeat scroll 0 0;
+    color: #fff !important
+}
+.finance-mainmenu ul li:hover a{
+    color: #2b2c36
+}
+.search_icon {
+    color: #000;
+    cursor: pointer;
+    display: inline-block;
+    padding: 30px 10px;
+}
+.modal-dialog {
+    margin: 135px auto;
+    width: 500px
+}
+.modal-header {
+	border-bottom: 1px solid transparent;
+	padding: 10px;
+}
+.search_box_container > form {
+    border: 1px solid #ddd;
+    height: 45px;
+    position: relative;
+}
+.search_box_container button {
+    background: #e69603  none repeat scroll 0 0;
+    border: medium none;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 20%;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    color: #fff
+}
+.search_box_container button:hover{
+    background: #018175 none repeat scroll 0 0;
+}
+.search_box_container input {
+    background: transparent none repeat scroll 0 0;
+    border: medium none;
+    height: 100%;
+    width: 100%;
+    color: #000;
+    padding: 5px 100px 5px 10px
+}
+.modal-header i {
+    font-size: 15px;
+}
+.modal {
+    background: rgba(11, 11, 11, 0.47) none repeat scroll 0 0;
+}
+.sticky {
+    background: #fff none repeat scroll 0 0;
+    position: static;
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
+}
+.stuck {
+    min-height: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1041;
+    box-shadow: 7px 0px 7px #aaa 
+}
+
+/*================================================
+10 - MAIN SLIDER CSS
+==================================================*/
+
+.slide-item-1 {
+    background: rgba(0, 0, 0, 0.3) url("../img/slider.jpg") repeat scroll 0 0;
+}
+.slide-item-2 {
+    background: rgba(0, 0, 0, 0.3) url("../img/slider2.jpg") repeat scroll 0 0;
+}
+.slide-item-3 {
+    background: rgba(0, 0, 0, 0.3) url("../img/slider3.jpg") repeat scroll 0 0;
+}
+.slide-item-4 {
+    background: rgba(0, 0, 0, 0.3) url("../img/slider4.jpg") repeat scroll 0 0;
+}
+.finance-main-caption{
+    /*background: rgba(26, 26, 26, 0.45) none repeat scroll 0 0*/
+}
+.finance-main-slide {
+    background-color: #eee;
+    background-position: center center;
+    background-size: cover;
+    height: 560px;
+}
+.finance-main-caption{
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+.finance-caption-cell {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+}
+.finance-main-caption h4 {
+    color: #fff;
+    font-family: "Playfair Display",serif;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+.finance-main-caption h2 {
+    color: #fff;
+    font-family: "Montserrat",sans-serif;
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.finance-main-caption p {
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin: 20px 0;
+    text-transform: inherit;
+}
+.finance-main-caption a {
+    margin: 0 5px;
+}
+.finance-slide .owl-nav > .owl-prev{
+    visibility: hidden;
+    -webkit-transition: all 0.3s cubic-bezier(.83, .8, .11, .64) 0s;
+    transition: all 0.3s cubic-bezier(.83, .8, .11, .64) 0s;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+.finance-slide:hover .owl-nav > .owl-prev{
+    visibility: visible;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+.finance-slide .owl-nav > .owl-next{
+    visibility: hidden;
+    -webkit-transition: all 0.3s cubic-bezier(.83, .8, .11, .64) 0s;
+    transition: all 0.3s cubic-bezier(.83, .8, .11, .64) 0s;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    
+}
+.finance-slide:hover .owl-nav > .owl-next{
+    visibility: visible;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+.finance-slide .owl-prev {
+    background: #212121 none repeat scroll 0 0 ;
+    border-radius: 0 !important;
+    color: #fff !important;
+    font-size: 27px !important;
+    height: 50px;
+    line-height: 39px;
+    position: absolute;
+    top: 45%;
+    left: 3%;
+    width: 50px;
+    padding: 5px;
+    text-align: center
+}
+.finance-slide .owl-next {
+    background: #212121 none repeat scroll 0 0 ;
+    border-radius: 0 !important;
+    color: #fff !important;
+    font-size: 27px !important;
+    height: 50px;
+    line-height: 39px;
+    position: absolute;
+    top: 45%;
+    right: 3%;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    width: 50px;
+    padding: 5px;
+    text-align: center
+}
+.finance-slide .owl-prev:hover, .finance-slide .owl-next:hover{
+    background: #e69603 none repeat scroll 0 0;
+    color: #fff;
+}
+
+/*================================================
+11 - SERVICE AREA CSS
+==================================================*/
+
+.finance-service-area {
+    margin-top: -75px;
+}
+.service-box {
+    background: #fff url("../img/service-left.jpg") no-repeat scroll -50px 0px;
+    padding: 50px 0;
+    position: relative;
+    z-index: 999;
+    box-shadow: 3px 0 29px rgba(0, 0, 0, 0.26)
+}
+.service-left {
+    padding: 20px 35px 0;
+    width: 315px;
+}
+.service-right {
+    margin-top: 0px;
+    padding-left: 0px;
+}   
+.service-left > h3 {
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+    color: #fff
+}
+.service-left > p{
+    color: #fff
+}
+.single-service {
+    margin: 25px 0;
+    padding-right: 30px;
+}
+.single-service > img {
+    float: left;
+}
+.service-text {
+    margin-left: 65px;
+}
+.service-text > h3 {
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 10px
+}
+
+/*================================================
+11.1 - HOME PAGE 2 STYLE
+==================================================*/
+.finance--home2-service-area {
+    background: #f9f9f9 none repeat scroll 0 0;
+}
+.head-service-right > h3 {
+    background: #3db8db none repeat scroll 0 0;
+    color: #fff;
+    padding: 20px 40px;
+    text-transform: capitalize;
+}
+.head-service-right > form {
+    padding: 20px 40px;
+}
+.head-service-right input {
+    border-color: currentcolor currentcolor #ddd;
+    border-style: none none solid;
+    border-width: 0 0 1px;
+    height: 50px;
+    padding: 5px 10px;
+    width: 100%;
+}
+.head-service-right form p textarea {
+    border-color: currentcolor currentcolor #ddd;
+    border-style: none none solid;
+    border-width: 0 0 1px;
+    height: 110px;
+    width: 100%;
+}
+.head-service-right p {
+    margin: 5px 0;
+}
+.head-service-right {
+    background: #fff none repeat scroll 0 0;
+    margin-top: -136px;
+    position: relative;
+    z-index: 9;
+    box-shadow: 3px 0 29px rgba(0, 0, 0, 0.26)
+}
+.head-service-right button {
+    background: #e69603 none repeat scroll 0 0;
+    border: 1px solid #e69603;
+    color: #fff;
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 17px;
+    margin-top: 30px;
+    padding: 12px 18px;
+    text-transform: capitalize;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    width: 100%;
+}
+.head-service-right button:hover {
+    background: #0b776d none repeat scroll 0 0;
+}
+/*================================================
+12 - ABOUT AREA CSS
+==================================================*/
+.about-left > h3 {
+    color: #354a6b;
+    font-family: "Playfair Display",serif;
+    font-size: 28px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 38px;
+    margin-bottom: 20px;
+}
+.about-right {
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+.about-right > a > img {
+    height: auto;
+    transform: scale(1);
+    transition-duration: 1200ms;
+    transition-timing-function: ease-out;
+    width: 100%;
+}
+.about-right:hover .about-right-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+.about-right:hover img {
+    transform: scale(1.1);
+}
+.about-right-overlay {
+    background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: all 0.4s ease 0s;
+    visibility: hidden;
+    width: 100%;
+}
+/*================================================
+13 - PROJECT AREA CSS
+==================================================*/
+
+.finance-project-area {
+    background: #f9f9f9 none repeat scroll 0 0;
+}
+.project-text {
+    background: #fff none repeat scroll 0 0;
+    border-bottom: 4px solid #e69603;
+    box-shadow: 3px 0 29px rgba(49, 49, 49, 0.43);
+    margin-bottom: 30px;
+    margin-left: 50px;
+    margin-top: -150px;
+    padding: 25px 40px;
+    width: 35%;
+}
+.single-project-slide > img {
+    position: relative;
+    z-index: -1;
+}
+.project-text > h3 {
+    color: #10242b;
+    font-size: 19px;
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+    margin-bottom: 15px
+}
+.project-text h5 {
+    color: #e9563d;
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+}
+.finance-project-slide .owl-prev {
+    bottom: 35px;
+    font-size: 25px;
+    position: absolute;
+    right: 55px;
+    color: #e9563d;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s
+}
+.finance-project-slide .owl-next {
+    bottom: 35px;
+    font-size: 25px;
+    position: absolute;
+    right: 0;
+    color: #e9563d;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s
+}
+.finance-project-slide .owl-prev:hover, .finance-project-slide .owl-next:hover{
+    color: #333
+}
+
+/*================================================
+14 - QUOTES AREA CSS
+==================================================*/
+
+.finance-quotes-area {
+    background: rgba(0, 0, 0, 0) url("../img/quotes-bg.jpg") no-repeat fixed center center / cover ;
+    text-align: center;
+}
+.finance-quotes-text > h2 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+.finance-quotes-text > p {
+    color: #fff;
+}
+.quotes-button .finance-white-btn {
+    margin: 40px 10px 0;
+}
+
+/*================================================
+15 - CORE SERVICE CSS
+==================================================*/
+
+.single-core-service {
+    margin-top: 50px;
+}
+.single-core-service > img {
+    float: left;
+}
+.core-text > p {
+    margin-top: 10px;
+}
+.core-text {
+    margin-left: 70px;
+}
+.core-text h4 > a:hover{
+    color: #e69603 
+}
+
+/*================================================
+16 - FAQ CSS
+==================================================*/
+
+.finance-faq-area {
+    background: rgba(0, 0, 0, 0) url("../img/project-1.jpg") no-repeat fixed 0 0 / cover ;
+    position: relative;
+}   
+.bg-overlay {
+    background: rgba(21, 21, 21, 0.77) none repeat scroll 0 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.skew-overlay {
+    background: #e69603 none repeat scroll 0 0;
+    display: block;
+    height: 100%;
+    left: -20%;
+    position: absolute;
+    top: 0;
+    -webkit-transform: skewX(-40deg);
+            transform: skewX(-40deg);
+    width: 80%;
+}
+.finance-faqs-left > h3, .finance-faqs-right > h3 {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+.panel-title a {
+    color: #555;
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 15px;
+    text-transform: capitalize;
+}
+.switch {
+    color: #e69603 ;
+    float: right;
+}
+.panel-title {
+    font-size: 14px;
+}
+.panel-heading {
+    background-color: #fff !important;
+    color: #555;
+    padding: 0;
+}
+.panel {
+    border: medium none;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+#accordion {
+    margin-bottom: 0;
+}
+.finance-faqs-right{
+    float: right;
+    width: 50%;
+    margin-top: 0
+}
+.call-dropdown{
+    text-transform: capitalize
+}
+.call-dropdown.dropdown-toggle, .finance-faqs-right > form > .row p > input {
+    background: transparent none repeat scroll 0 0;
+    border: 1px solid #aaa;
+    border-radius: 0;
+    color: #fff;
+    height: 40px;
+    padding: 5px 10px;
+    width: 100%;
+    text-align: left
+}
+.finance-faqs-right > form > .row {
+    margin-top: 5px;
+}
+#dropdownmissdcall > i {
+    float: right;
+    margin-top: 6px;
+}
+.dropdown-menu.faq-drop-open {
+    border-radius: 0;
+    font-weight: 500;
+    margin: 0;
+    text-transform: capitalize;
+    width: 100%;
+}
+.finance-faqs-right button[type="submit"] {
+    background: #e69603 none repeat scroll 0 0;
+    border: 1px solid #e69603;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 17px;
+    padding: 12px 18px;
+    text-transform: capitalize;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    width: 100%;
+}
+.finance-faqs-right button[type="submit"]:hover{
+    background: #0b776d none repeat scroll 0 0;
+}
+
+/*================================================
+17 - TESTIMONIAL CSS
+==================================================*/
+
+.finance-testimonial-area {
+    background: #ecf1f7 none repeat scroll 0 0;
+}
+.testimonial-img {
+    border-right: 1px solid #e1e7ee;
+}
+.testimonial-img > img {
+    border-radius: 50%;
+    height: 150px;
+    margin: 0 auto;
+    width: 150px !important;
+}
+.textimonial-text{
+    margin-top: 0
+}
+.textimonial-text > p {
+    color: #465053;
+    font-weight: 400;
+    font-family: "Poppins",sans-serif;
+}
+.client-name {
+    color: #e9563d !important;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+.testimonial-rating li {
+    display: inline-block;
+}
+.testimonial-rating li i{
+    color: #FAC113
+}
+.testimonial-rating > p {
+    display: inline-block;
+}
+.testimonial-rating > ul {
+    display: inline-block;
+    margin-left: 10px;
+}
+.testimonial-rating > p {
+    font-weight: 500;
+}
+.testimonial-img > i {
+    background: #e69603 none repeat scroll 0 0;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 20px;
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    right: 26%;
+    text-align: center;
+    top: 0;
+    width: 40px;
+}
+.textimonial-text > i {
+    color: #e69603;
+    font-size: 20px;
+    position: relative;
+    right: -95%;
+}
+.owl-dots {
+    margin-top: 20px;
+    text-align: center;
+}
+.owl-dots .owl-dot {
+    display: inline-block;
+}
+.owl-theme .owl-dots .owl-dot span {
+    -webkit-backface-visibility: visible;
+            backface-visibility: visible;
+    background: #fff none repeat scroll 0 0;
+    display: block;
+    height: 10px;
+    margin: 5px 7px;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    width: 10px;
+}
+.owl-dots .owl-dot.active span, .owl-dots .owl-dot:hover span {
+    background: #3ac6b6 none repeat scroll 0 0;
+}
+
+/*================================================
+18 - TEAM CSS
+==================================================*/
+
+.finance-single-advisor{
+    margin-top: 30px
+}
+.advisor-text h3 > a {
+    display: inline-block;
+    font-size: 19px;
+    margin-top: 18px;
+}
+.advisor-text h3 > a:hover{
+    color: #e69603
+}
+.advisor-text > span {
+    color: #e9563d;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+}
+.advisor-social li {
+    display: inline-block;
+}
+.advisor-social a {
+    background: #e69603 none repeat scroll 0 0;
+    border-radius: 50%;
+    color: #fff;
+    display: block;
+    font-size: 17px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 40px;
+}
+.advisor-social a:hover {
+    background: #fff none repeat scroll 0 0;
+    color: #e69603;
+}
+.advisor-social > ul {
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    left: 17%;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    position: absolute;
+    top: 45%;
+    visibility: hidden;
+    z-index: -1;
+}
+.finance-single-advisor:hover .advisor-social > ul{
+    visibility: visible;
+    -webkit-backface-visibility: visible;
+            backface-visibility: visible;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    z-index: 1;
+}
+.advisor-img img{
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition-duration: 600ms;
+            transition-duration: 600ms;
+    -webkit-transition-timing-function: ease-in-out;
+            transition-timing-function: ease-in-out;
+    width: 100%;
+}
+.finance-single-advisor:hover img {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+}
+.advisor-img {
+    position: relative;
+    overflow: hidden
+}
+.advisor-social {
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    background: rgba(23, 23, 23, 0.8) none repeat scroll 0 0;
+    min-height: 100%;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    position: absolute;
+    text-align: center;
+    top: 0;
+    -webkit-transform: perspective(700px) rotateX(90deg);
+            transform: perspective(700px) rotateX(90deg);
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    visibility: hidden;
+    width: 100%;
+}
+.finance-single-advisor:hover .advisor-social {
+    -webkit-backface-visibility: visible;
+            backface-visibility: visible;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -webkit-transform: perspective(700px) rotateX(0deg);
+            transform: perspective(700px) rotateX(0deg);
+    visibility: visible;
+}
+
+/*================================================
+19 - FOOTER AREA CSS
+==================================================*/
+
+.finance-footer-top-area {
+    background: #252525 none repeat scroll 0 0;
+    color: #999;
+}
+.single-footer{
+    margin: 0
+}
+.single-footer img {
+    margin-bottom: 15px;
+}
+.footer-social-icon {
+    margin-top: 30px;
+}
+.footer-social{
+    margin-top: 20px
+}
+.footer-social > li{
+    display: inline-block;
+}
+.footer-social li a{
+    background-color: #333333;
+    border-radius: 50%;
+    color: #777;
+    display: block;
+    font-size: 18px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    width: 40px;
+}
+.fb:hover {
+    background: #4b6ea9 none repeat scroll 0 0;
+    color: #fff;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg)
+}
+.twitter:hover {
+    background: #65bbf2 none repeat scroll 0 0;
+    color: #fff;
+        -webkit-transform: rotate(360deg);
+            transform: rotate(360deg)
+}
+.gp:hover {
+    background: #dd4d41 none repeat scroll 0 0;
+    color: #fff;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg)
+}
+.linkedin:hover {
+    background: #0075b5 none repeat scroll 0 0;
+    color: #fff;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg)
+}
+.single-footer > h3, .footer-social-icon > h3 {
+    color: #fff  ;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    text-transform: capitalize;
+}
+.footer-widget > li {
+    border-bottom: 1px dashed #999;
+}
+.footer-widget > li:last-child{
+    border-bottom: 0px dashed #999;
+}
+.footer-widget a {
+    display: block;
+    padding: 5px 0;
+}
+.footer-widget a:hover{
+    color: #fff
+}
+.contact-details i {
+    color: #fff ;
+    margin-right: 10px;
+}
+.contact-details {
+    margin: 6px 0;
+}
+.insta-post {
+    display: inline-block;
+    height: 65px;
+    margin: 2px;
+    width: 65px;
+    position: relative
+}
+.overlay-insta {
+    -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+    background: rgba(23, 23, 23, 0.8) none repeat scroll 0 0;
+    cursor: pointer;
+    height: 100%;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    position: absolute;
+    top: 0;
+    -webkit-transform: perspective(500px) rotateY(-90deg);
+          transform: perspective(500px) rotateY(-90deg);
+    -webkit-transition: all 0.4s linear 0s;
+    transition: all 0.4s linear 0s;
+    visibility: hidden;
+    width: 100%;
+}   
+.insta-post:hover .overlay-insta{
+    -webkit-backface-visibility: visible;
+        backface-visibility: visible;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -webkit-transform: perspective(500px) rotateY(0deg);
+        transform: perspective(500px) rotateY(0deg);
+    visibility: visible;
+}
+.finance-footer-bottom-area {
+    background: #000 none repeat scroll 0 0;
+    color: #fff;
+}
+.copyright-left {
+    text-align: left;
+    font-weight: 400
+}
+.copyright-right{
+    text-align: right;
+    font-weight: 400
+}
+.copyright-right > p > i, .copyright-right > p > span{
+    color: #e69603 ;
+    margin: 0px 5px;
+    font-weight: 600
+}
+
+/*================================================
+20 - ABOUT PAGE CSS
+==================================================*/
+
+.finance-graph-area {
+    background: #ebf1f6 none repeat scroll 0 0;
+}
+.graph-left > h3 {
+    color: #444444;
+    font-family: "Poppins",sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 45px;
+    text-transform: capitalize;
+}
+.single-graph-text > h3{
+    color: #444444;
+    font-family: "Poppins",sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: capitalize;   
+}
+.single-graph-text {
+    margin-left: 80px;
+}
+.finance-single-graph > img {
+    float: left;
+}
+.finance-single-graph {
+    margin-bottom: 50px;
+}
+.graph-right{
+    margin-top: 0
+}
+.finance-single-graph:last-child{
+    margin-bottom: 0
+}
+.about-learn-more{
+    text-align: center
+}
+.about-learn-more > a {
+    background: #e69603 none repeat scroll 0 0;
+    color: #fff;
+    display: inline-block;
+    font-weight: 600;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+.about-learn-more > a:hover {
+    background: #0b776d  none repeat scroll 0 0;
+}
+
+/*================================================
+21 - SINGLE SERVICE PAGE CSS
+==================================================*/
+
+.single-service-widget li {
+    border-bottom: 3px solid #fff;
+}
+.single-service-widget a {
+    background: #f7f7f7 none repeat scroll 0 0;
+    color: #333;
+    display: block;
+    font-weight: 600;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    border-left: 5px solid #f7f7f7
+}
+.single-service-widget a:hover, .single-service-widget ul li.active > a {
+    border-left: 5px solid #000;
+    background: #e69603 none repeat scroll 0 0;
+    color: #fff
+}
+.single-service-widget a i {
+    float: right;
+    font-size: 20px;
+    margin-top: 2px;
+}
+.single-service-widget {
+    margin-bottom: 50px;
+}
+.single-service-widget:last-child{
+    margin-bottom: 0px
+}
+.widget-title > h3{
+    color: #444444;
+    font-family: "Poppins",sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+.widget-title {
+    margin-bottom: 25px;
+}
+.broucher-item i {
+    background: #fff none repeat scroll 0 0;
+    color: #e69603;
+    font-size: 20px;
+    height: 30px;
+    left: 14px;
+    line-height: 30px;
+    position: absolute;
+    text-align: center;
+    top: 8px;
+    width: 30px;
+}
+.broucher-item > a {
+    background: #e69603 none repeat scroll 0 0;
+    border-left: 0 none;
+    color: #fff;
+    padding-left: 60px;
+}
+.broucher-item > a:hover{
+    border-left: 0px
+}
+.broucher-item {
+    margin: 10px 0;
+    position: relative;
+}
+.broucher-item a span {
+    color: #fff;
+    float: right;
+    margin-top: 5px;
+}
+.single-service-widget > form {
+    background: #f7f7f7 none repeat scroll 0 0;
+    padding: 20px;
+}
+.single-service-widget form p label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.single-service-widget input {
+    border: 1px solid #ddd;
+    height: 40px;
+    padding: 5px 10px;
+    width: 100%;
+}
+.single-service-widget form p textarea {
+    border: 1px solid #ddd;
+    height: 80px;
+    padding: 5px 10px;
+    width: 100%;
+}
+.single-service-widget form p button[type="submit"] {
+    background: #e69603 none repeat scroll 0 0;
+    border: 1px solid #e69603;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 17px;
+    padding: 12px 18px;
+    text-transform: capitalize;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    width: 100%;
+}
+.single-service-widget form p button[type="submit"]:hover {
+    background: #0b776d none repeat scroll 0 0;
+}
+.single-service-slider{
+    background: #f7f7f7 none repeat scroll 0 0;
+    padding: 20px 30px;
+}   
+.service-slider-item h4 {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Poppins",sans-serif;
+    line-height: 23px
+}
+.service-slider-item h5 {
+    color: #e69603;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.single-service-slider .owl-dots {
+    margin-top: 10px;
+}
+.audit-text, .audit-chart, .single-shop-tab {
+    margin-top: 30px;
+}
+.single-service-right{
+    margin-top: 0
+}
+.audit-text > h3, .audit-chart > h3 {
+    color: #000;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}   
+.audit-text > p {
+    margin: 0 0 10px;
+}
+#chartContainer{
+    height: 340px;
+    width: 100%
+}
+.canvasjs-chart-credit {
+    display: none;
+}
+.nav-tabs > li > a{
+    border: 0px
+}
+#pro_2 a {
+    background: #eee none repeat scroll 0 0;
+    border-radius: 0;
+    color: #000;
+    margin: 0;
+    text-transform: capitalize;
+    border-left: 5px solid #eee
+}
+#pro_2 .active > a {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: #e69603 none repeat scroll 0 0;
+    border-color: currentcolor currentcolor currentcolor #000;
+    -o-border-image: none;
+       border-image: none;
+    border-style: none none none solid;
+    border-width: medium medium medium 5px;
+    color: #fff;
+}
+#pro_2 > li {
+    float: none;
+    margin: 2px;
+}
+#pro_2{
+    border: medium none;
+    margin-bottom: 0
+}
+.panel-body {
+    background: #f9f9f9 none repeat scroll 0 0;
+    border: 1px solid #ddd;
+}
+
+/*================================================
+22 - PROJECT PAGE CSS
+==================================================*/
+
+.project-btn {
+    display: block;
+    margin: 30px 0;
+    text-align: center;
+}
+.project-btn > a {
+    color: #555;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 15px;
+}
+.project-btn > a.current {
+    cursor: default;
+}
+.project-btn > a:hover, .project-btn > a.current{
+    color: #e69603
+}
+.element-item {
+    float: left;
+    margin: 30px 0 0;
+    padding: 0 15px;
+    width: 33.33%;
+}
+.project-single-item{
+    position: relative;
+    overflow: hidden
+}
+.img-responsive{
+    width: 100%
+}
+.project-img-overlay {
+    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 150, 136, 0.52) 27%, rgba(0, 150, 136, 0.93) 71%) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 150, 136, 0.52) 27%, rgba(0, 150, 136, 0.93) 71%) repeat scroll 0 0;
+    bottom: -30px;
+    color: #fff;
+    font-size: 14px;
+    left: 0;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    padding: 50px 15px 15px;
+    position: absolute;
+    -webkit-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
+    visibility: hidden;
+    width: 100%;
+    z-index: -1;
+}
+.project-single-item:hover .project-img-overlay{
+    bottom: 0;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    visibility: visible;
+    z-index: 9
+}
+.project-img-overlay p, .project-img-overlay h4{
+    color: #fff;
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+    text-transform: capitalize
+}
+
+/*================================================
+23 - SINGLE PROJECT PAGE CSS
+==================================================*/
+
+.details-project-text > h3, .details-project-graph > h3 {
+    color: #444444;
+    font-family: "Poppins",sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    display: inline-block
+}
+.details-pro-left {
+    margin-top: 0px;
+}
+.details-project-text > p {
+    margin-top: 20px;
+}
+.details-project-graph-text {
+    margin-top: 40px;
+}
+.details-project-graph {
+    margin-top: 50px;
+}
+.finance-demo-project-area {
+    background: #f7f7f7 none repeat scroll 0 0;
+}
+.single-related{
+    margin-top: 30px
+}
+
+/*================================================
+24 - DEFAULT NEWS CSS
+==================================================*/
+.finance-default-news-img {
+    position: relative;
+}
+.finance-default-news-img img {
+    width: 100%;
+}
+.news-overlay {
+    background: rgba(0, 0, 0, 0.3) none repeat scroll 0 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s
+}
+.inner-overlay {
+    background: rgba(0, 0, 0, 0.3) none repeat scroll 0 0;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    border: 1px solid #fff
+}
+.finance-default-news-img:hover .news-overlay{
+    background: rgba(100, 100, 100, 0.33) none repeat scroll 0 0;
+}
+.single-news-default {
+    border-bottom: 3px dotted #ddd;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    margin-top: 0
+}
+.finance-default-news-text {
+    padding: 40px 60px;
+}
+.finance-default-news-text > h3 > a {
+    display: inline-block;
+    font-family: "Poppins",sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    text-transform: capitalize;
+}
+.finance-default-news-text > h3 > a:hover{
+    color:#e69603
+}
+.post-share h4 {
+    color: #000;
+    display: inline-block;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.post-share > ul {
+    display: inline-block;
+    margin-left: 10px
+}
+.post-share ul li {
+    display: inline-block;
+}
+.post-share ul li a {
+    color: #fff;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    width: 30px;
+}
+.post-fb{
+    background: #4b6ea9 none repeat scroll 0 0
+}
+.post-fb:hover{
+    background: #294b86 none repeat scroll 0 0
+}
+.post-twit{
+    background: #65bbf2 none repeat scroll 0 0
+}
+.post-twit:hover{
+    background: #2085c6 none repeat scroll 0 0
+}
+.post-gp{
+    background: #dd4d41 none repeat scroll 0 0
+}
+.post-gp:hover{
+    background: #b2382e none repeat scroll 0 0
+}
+.finance-post-share-comment {
+    margin-top: 30px;
+}
+.post-comment-like > p {
+    display: inline-block;
+}
+.post-comment-like > p.pcomment:after {
+    color: #999;
+    content: "|";
+    margin-right: 10px;
+    padding-left: 10px;
+}
+.post-share{
+    text-align: left
+}
+.post-comment-like {
+    text-align: right;
+    margin-top: 0
+}
+.post-comment-like p > span {
+    color: #e9563d;
+}
+.post-comment-like p {
+    color: #000;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+/*================================================
+25 - NEWS LIST CSS
+==================================================*/
+
+.news-list-text {
+    padding: 0;
+}
+
+/*================================================
+26 - NEWS GRID CSS
+==================================================*/
+
+.news-grid-text {
+    padding: 20px 0;
+}
+
+/*================================================
+27 - NEWS SIDEBAR CSS
+==================================================*/
+
+.news-single-widget {
+    background: #f9f9f9 none repeat scroll 0 0;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+.finance-news-sidebar {
+    margin-top: 0px;
+}
+.news-single-widget:last-child{
+    margin-bottom: 0px
+}
+.news-single-widget > form {
+    position: relative;
+    height: 40px
+}
+.news-single-widget input[type="search"] {
+    background: #fff none repeat scroll 0 0;
+    border: medium none;
+    height: 40px;
+    padding: 5px 60px 5px 10px;
+    width: 100%;
+}
+.news-single-widget form > button{
+    background: #e69603  none repeat scroll 0 0;
+    border: medium none;
+    color: #fff;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    width: 20%;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    top: 0
+}
+.news-single-widget button:hover {
+     background: #0b776d none repeat scroll 0 0;
+}
+.news-single-widget > h3 {
+    background: #242c42 none repeat scroll 0 0;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    text-transform: capitalize;
+}
+.blog-catagory li {
+    border-bottom: 2px solid #fff;
+}
+.blog-catagory li:last-child{
+    border-bottom: 0px solid #fff;
+}
+.blog-catagory li a {
+    color: #444;
+    display: block;
+    padding: 10px 20px;
+    text-transform: capitalize;
+}
+.blog-catagory li a:hover{
+    color: #e69603 
+}
+.blog-catagory span {
+    float: right;
+}   
+.Tags-catagory > li {
+    display: inline-block;
+    margin: 4px 2px;
+}
+.Tags-catagory > li > a {
+    background: #fff none repeat scroll 0 0;
+    display: block;
+    padding: 5px 10px;
+    text-transform: capitalize;
+}
+.Tags-catagory > li > a:hover{
+    background: #e69603 none repeat scroll 0 0;
+    color: #fff
+}
+.single-popular-post {
+    border-bottom: 2px solid #fff;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+.single-popular-post:last-child{
+    border-bottom: 0px solid #fff;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.single-popular-post a > i {
+    color: #e69603;
+    font-size: 20px;
+    margin-right: 5px;
+}
+.single-popular-post > a {
+    color: #555;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize
+}
+.single-popular-post > a:hover{
+    color: #e69603;
+}
+.single-popular-post > p {
+    color: #555;
+    font-size: 13px;
+    text-transform: capitalize;
+}
+.single-popular-post > p > span{
+    color: #e69603
+}
+
+/*================================================
+28 - SINGLE NEWS PAGE CSS
+==================================================*/
+
+.single-news-text > h3 {
+    display: inline-block;
+    font-family: "Poppins",sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+.single-news-text {
+    margin-top: 35px;
+}
+.single-news-text blockquote {
+    background: #d5e8e6 none repeat scroll 0 0;
+    border-left: 0 none;
+    color: #354a6b;
+    font-family: "Playfair Display",serif;
+    font-style: italic;
+    font-weight: 400;
+    margin: 50px 0;
+    padding: 50px;
+    position: relative;
+}
+.single-news-text blockquote .fa-quote-left {
+    left: 20px;
+    position: absolute;
+    top: 20px;
+    color: #e69603 
+}
+.single-news-text blockquote .fa-quote-right {
+    bottom: 20px;
+    position: absolute;
+    right: 20px;
+    color: #e69603 
+}
+.single-news-text > ul {
+    margin: 50px 0;
+    
+}
+.single-news-text ul li i {
+    color: #e69603;
+    font-size: 20px;
+    margin-right: 20px;
+}
+.single-news-text li {
+    margin: 10px 0;
+}
+.single-news-author {
+    border-bottom: 1px solid #ddd;
+    margin: 40px 0;
+    padding: 40px;
+}
+.news-author-img {
+    float: left;
+    height: 150px;
+    margin-right: 30px;
+    width: 150px;
+}
+.news-author-img > img {
+    height: 100%;
+    width: 100%;
+}
+.news-author-text > h4 {
+    margin-bottom: 10px;
+}
+.news-author-text {
+    padding: 10px;
+}
+.single-news-comment {
+    margin-top: 40px;
+    padding-top: 25px;
+}
+.comment-list {
+    margin-top: 40px;
+}
+.single-comment-item {
+    background: #f9f9f9 none repeat scroll 0 0;
+    margin: 10px 0;
+    padding:30px 10px
+}
+.finance-comment-item h4 {
+    color: #555;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.single-comment-item img {
+    display: block;
+    height: 70px;
+    margin: 0 auto;
+    width: 70px;
+}
+.finance-comment-item span {
+    color: #777;
+    font-size: 13px;
+}
+.finance-comment-item a {
+    color: #e69603 ;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+.finance-comment-item a:hover{
+    color: #333
+}
+.comment-list ul ul {
+    margin-left: 100px;
+}
+.single-comment-item p {
+    color: #555;
+}
+.finance-leave-comment {
+    margin-bottom: 0;
+    margin-top: 50px;
+}
+.finance-leave-comment > h3 {
+    color: #555;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.finance-leave-comment input[type="text"], .finance-leave-comment input[type="email"] {
+    background: transparent none repeat scroll 0 0;
+    border: 1px solid #ddd;
+    float: left;
+    height: 45px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-top: 0;
+    padding: 10px 15px;
+    width: 45%;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s
+}
+.finance-leave-comment textarea {
+    border: 1px solid #ddd;
+    height: 160px;
+    margin-bottom: 20px;
+    padding: 5px 15px;
+    width: 93%;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s
+}
+.finance-leave-comment input:focus, .finance-leave-comment textarea:focus{
+    border: 1px solid #e69603 ; 
+}
+.finance-leave-comment button {
+    background: #e69603 none repeat scroll 0 0;
+    border: 1px solid #e69603;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 17px;
+    padding: 12px 18px;
+    text-transform: capitalize;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+.finance-leave-comment button:hover {
+    background: #0b776d  none repeat scroll 0 0;
+}
+
+/*================================================
+29 - SHOP PAGE CSS
+==================================================*/
+
+.finance-shop-shorting {
+    background: #f9f9f9 none repeat scroll 0 0;
+    padding: 15px 10px;
+}
+.shorting-left {
+    text-align: left;
+}
+.shorting-right {
+    text-align: right;
+}
+.shorting-left > p {
+    margin: 10px 0;
+    text-transform: capitalize;
+}
+.shorting-right select {
+    border: 1px solid #ddd;
+    padding: 5px;
+    text-transform: capitalize;
+}   
+.shorting-right > select > option {
+    border-bottom: 1px dashed #ddd;
+    padding: 5px;
+}   
+.single-product {
+    margin: 30px 0;
+}
+.single-product-img {
+    border: 2px solid #ddd;
+    overflow: hidden;
+    position: relative;
+}   
+.pro-price {
+    background: #e69603 none repeat scroll 0 0;
+    color: #fff;
+    font-weight: 900;
+    height: auto;
+    right: -45px;
+    line-height: 20px;
+    overflow: hidden;
+    padding: 35px 15px 13px;
+    position: absolute;
+    text-align: center;
+    top: -11px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    width: 140px;
+    z-index: 9;
+}
+.pro-price > p {
+    font-size: 18px;
+    font-weight: 500;
+}
+.pro-number {
+    background: #e69603 none repeat scroll 0 0;
+    color: #fff;
+    font-weight: 900;
+    height: auto;
+    right: 68px;
+    line-height: 20px;
+    overflow: hidden;
+    /*padding: 35px 15px 13px;*/
+    position: absolute;
+    text-align: center;
+    top: 217px;
+    left:54px;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    width: 140px;
+    z-index: 9;
+}
+.pro-number > p {
+    font-size: 18px;
+    font-weight: 500;
+}
+.single-product-img img {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition-duration: 600ms;
+            transition-duration: 600ms;
+    -webkit-transition-timing-function: ease-in-out;
+            transition-timing-function: ease-in-out;
+    width: 100%
+}
+.product-overlay {
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    background: rgba(23, 23, 23, 0.59) none repeat scroll 0 0;
+    height: 100%;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    position: absolute;
+    text-align: center;
+    top: 0;
+    -webkit-transform: perspective(700px) rotateY(-90deg);
+            transform: perspective(700px) rotateY(-90deg);
+    -webkit-transition: all 0.4s linear 0s;
+    transition: all 0.4s linear 0s;
+    visibility: hidden;
+    width: 100%;
+}
+.product-overlay > i {
+    color: #fff;
+    font-size: 26px;
+    left: 46%;
+    position: absolute;
+    text-align: center;
+    top: 45%;
+}
+.single-product-img:hover img {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+}
+.single-product-img:hover .product-overlay {
+    -webkit-backface-visibility: visible;
+            backface-visibility: visible;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -webkit-transform: perspective(700px) rotateY(0deg);
+            transform: perspective(700px) rotateY(0deg);
+    visibility: visible;
+}
+.product-text > h4 {
+    font-size: 18px;
+    margin-top: 15px;
+    text-transform: capitalize;
+    font-weight: 400
+}
+.product-text > h4 > a:hover {
+    color: #e69603 ;
+}
+.product-text li {
+    display: inline-block;
+}
+.cart > li {
+    border-bottom: 1px solid #fff;
+}
+.cart > li:last-child{
+    border-bottom: 0px solid #fff;
+}
+.product-text ul li i {
+    color: #e69603;
+    font-size: 14px;
+}
+.product-text > a {
+    background: #ddd none repeat scroll 0 0;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 7px 15px;
+    text-transform: capitalize;
+}
+.product-text > a:hover{
+    background: #e69603  none repeat scroll 0 0;
+    color: #fff
+}
+.product-text {
+    text-align: center;
+}
+.rated-img {
+    display: table-cell;
+    padding: 10px 13px;
+    vertical-align: middle
+}
+.rated-text {
+    display: table-cell;
+    padding-left: 16px;
+    vertical-align: middle;
+}
+.rated-text li {
+    display: inline-block;
+}
+.rated-text li i {
+    color: #e69603;
+    font-size: 14px;
+}
+.rated-text > h4 {
+    font-size: 16px;
+    margin-bottom: 6px;
+    text-transform: capitalize;
+}
+
+/*================================================
+30 - SINGLE SHOP PAGE CSS
+==================================================*/
+
+.single-shop-img > img{
+    width: 100%
+}
+.single-shop-text > h3 {
+    font-size: 24px;
+    text-transform: capitalize;
+}
+.single-shop-text {
+    margin-top: 0px;
+}
+.single-shop-text > ul {
+    margin-top: 20px;
+}
+.single-shop-text li {
+    display: inline-block;
+    margin: 0 2px;
+}
+.single-shop-text ul li i {
+    color: #e69603;
+    font-size: 18px;
+}
+.category-shop > p {
+    display: inline-block;
+    margin-right: 15px;
+    text-transform: capitalize;
+    font-weight: 500
+}
+.category-shop > p > a {
+    color: #e9563d;
+    font-weight: 500;
+}
+.single-shop-price {
+    margin: 20px 0;
+}
+.single-shop-price > h4 {
+    font-size: 35px;
+}
+.category-shop {
+    margin: 10px 0;
+}
+.single-shop-text > p {
+    /*border-bottom: 1px solid #ddd;*/
+    border-top: 1px solid #ddd;
+    padding: 15px 0;
+}
+.single-shop-check {
+    margin: 15px 0;
+}
+.single-shop-check label {
+    color: #333;
+    font-size: 13px;
+    font-weight: 500;
+}
+.single-shop-check input {
+    border: 1px solid #ddd;
+    height: 40px;
+    padding: 5px 10px;
+    width: 60%
+}
+.single-shop-check button {
+    background: #ddd none repeat scroll 0 0;
+    border: medium none;
+    color: #777;
+    display: inline-block;
+    font-weight: 500;
+    height: 40px;
+    margin-left: 10px;
+    padding: 5px 25px;
+    text-transform: capitalize;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s
+}
+.single-shop-check button:hover {
+    background: #e69603 none repeat scroll 0 0;
+    color: #fff;
+}
+.shop-quantity > form {
+    display: inline-block;
+}
+.shop-quantity input{
+    border: 1px solid #ddd;
+    height: 40px;
+    padding: 5px;
+    width: 80px;
+}   
+.shop-quantity > a {
+    background: #ddd none repeat scroll 0 0;
+    display: inline-block;
+    margin-left: 20px;
+    padding: 7px 30px;
+    text-transform: capitalize;
+}
+.shop-quantity > a:hover {
+    background: #e69603 none repeat scroll 0 0;
+    color: #fff;
+}
+.shop-tab {
+    margin-top: 70px;
+}
+#singleshop .active > a {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: #e69603 none repeat scroll 0 0;
+    border-color: currentcolor currentcolor currentcolor #000;
+    -o-border-image: none;
+       border-image: none;
+    border-style: none none none solid;
+    border-width: medium medium medium 5px;
+    color: #fff;
+}
+#singleshop a {
+    background: #eee none repeat scroll 0 0;
+    border-left: 5px solid #eee;
+    border-radius: 0;
+    color: #000;
+    margin: 0;
+    text-transform: capitalize;
+}
+#singleshop li {
+    margin-right: 5px;
+}
+.panel-body.desc > p {
+    margin: 0 0 10px;
+}
+.shop {
+    background: transparent none repeat scroll 0 0;
+    border: medium none;
+}
+.panel-body.desc {
+    background: transparent none repeat scroll 0 0;
+    border: medium none;
+    padding-top: 30px;
+}
+.finance-shop-related {
+    margin-top: 50px;
+}
+.finance-shop-related-head > h3 {
+    text-transform: capitalize;
+}
+
+/*================================================
+31 - CART PAGE CSS
+==================================================*/
+
+.cart-table {
+    overflow-x: auto;
+}
+.cart-table table thead > tr:nth-of-type(2n+1), .calculate-shipping-right table tbody > tr:nth-of-type(2n+1){
+    background: #f4f4f4  none repeat scroll 0 0;
+}
+.cart-table table thead th, .calculate-shipping-right table thead th {
+    text-transform: uppercase;
+}
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+    border-bottom: 0 solid #ddd;
+    border-top: 0 solid #ddd;
+    vertical-align: middle;
+}
+.cart-table thead th, .calculate-shipping-right thead th {
+    padding: 15px 20px !important;
+}
+.cart-table tbody td, .calculate-shipping-right tbody td {
+    padding: 15px 20px !important;
+}
+.finance-cart-close {
+    text-align: center;
+}
+.finance-cart-close > a:hover{
+    color: #e9563d
+}
+.finance-cart-preview img {
+    height: 60px;
+    width: 60px;
+}
+.cart-table tbody td p {
+    text-transform: capitalize;
+}
+.finance-cart-quantity > input {
+    border: 1px solid #ddd;
+    padding: 5px;
+    width: 70px;    
+}
+.finance-cart-product p {
+    font-weight: 500;
+    display: inline-block
+}
+.finance-cart-product a:hover{
+    color: #e69603 
+}
+.cart-table table tbody > tr:nth-of-type(2n+2), .calculate-shipping-right table tbody > tr:nth-of-type(2n+2) {
+    background: #f9f9f9 none repeat scroll 0 0;
+}
+.table-striped > tbody > tr:nth-of-type(2n+1) {
+    background-color: #fff;
+}
+.finance-update-cart {
+    margin-top: 30px;
+}
+.coupon-cart-left {
+    text-align: left;
+}
+.coupon-cart-right {
+    text-align: right;
+}
+.coupon-cart-left input[type="text"] {
+    background: #eee none repeat scroll 0 0;
+    border: medium none;
+    height: 50px;
+    padding: 10px 15px;
+    width: 45%;
+}
+.coupon-cart-left input[type="submit"] {
+    background: #e69603 none repeat scroll 0 0;
+    border: medium none;
+    color: #fff;
+    font-weight: 600;
+    height: 50px;
+    margin-left: 10px;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+.coupon-cart-left input[type="submit"]:hover, .coupon-cart-right > a:hover {
+    background: #0b776d none repeat scroll 0 0;
+}
+.coupon-cart-right > a {
+    background: #e69603 none repeat scroll 0 0;
+    color: #fff;
+    display: inline-block;
+    font-weight: 600;
+    margin-right: 50px;
+    margin-top: 0;
+    padding: 12px 20px;
+    text-transform: uppercase;
+}
+.calculate-shipping-left, .calculate-shipping-right {
+    margin-top: 50px;
+}
+.calculate-shipping-left select {
+    border: 1px solid #ddd;
+    height: 45px;
+    padding: 5px;
+    text-transform: capitalize;
+    width: 100%;
+}
+.calculate-shipping-left select option {
+    padding: 5px 10px;
+}
+.single-shipping input {
+    border: 1px solid #ddd;
+    height: 45px;
+    padding: 5px 10px;
+    width: 100%;
+    margin: 0
+}
+.single-shipping {
+    margin-top: 10px;
+}
+.calculate-shipping-left > form {
+    margin-top: 25px;
+}
+.calculate-shipping-right{
+    overflow-x: auto;
+}
+.calculate-shipping-right > table {
+    width: 100%;
+    margin-top: 25px;
+}
+.single-shipping button {
+    background: #e69603 none repeat scroll 0 0;
+    border: 1px solid #e69603;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 17px;
+    padding: 15px 20px;
+    text-transform: capitalize;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+.single-shipping button:hover{
+    background: #0b776d none repeat scroll 0 0;
+}
+.proceed-checkout > a {
+    background: #e69603 none repeat scroll 0 0;
+    color: #fff;
+    display: inline-block;
+    font-weight: 600;
+    margin-right: 50px;
+    margin-top: 0;
+    padding: 12px 20px;
+    text-transform: uppercase;
+}
+.proceed-checkout > a:hover {
+    background: #0b776d none repeat scroll 0 0;
+}
+.proceed-checkout {
+    margin-top: 50px;
+    text-align: right;
+}
+
+/*================================================
+32 - CHECKOUT PAGE CSS
+==================================================*/
+
+.finance-checkout-form > form {
+    margin-top: 30px;
+}
+.checkout-form-right {
+    margin-top: 0px;
+}
+.finance-checkout-form > h3, .checkout-bottom h3, .finance-register > h3, .finance-login > h3 {
+    color: #444444;
+    font-family: "Poppins",sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+.checkout-form label {
+    color: #555;
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: capitalize
+}
+.checkout-form input {
+    border: 1px solid #ddd;
+    height: 45px;
+    padding: 5px 10px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.checkout-form textarea {
+    border: 1px solid #ddd;
+    height: 105px;
+    padding: 10px;
+    width: 100%;
+}
+.checkout-cart-table {
+    margin-top: 50px;
+}
+.payment h4 {
+    color: #333;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 10px;
+    text-transform: capitalize;
+}
+.payment {
+    margin-top: 15px;
+}
+.checkout-cart-table > table {
+    margin-top: 25px;
+}
+.payment > img {
+    float: right;
+}
+
+/*================================================
+33 - MYACCOUNT PAGE CSS
+==================================================*/
+
+.finance-register > form, .finance-login > form {
+    background: #f9f9f9 none repeat scroll 0 0;
+    padding: 30px;
+}
+.register-form label {
+    color: #333;
+    display: inline-block;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.account-form-group > input {
+    border: medium none;
+    height: 100%;
+    left: 0;
+    padding: 5px 10px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.account-form-group {
+    border: 1px solid #ddd;
+    height: 45px;
+    position: relative;
+    margin-bottom: 20px
+}
+.account-form-group i {
+    color: #aaa;
+    font-size: 18px;
+    position: absolute;
+    right: 15px;
+    top: 12px;
+}
+.finance-login {
+    margin-top: 0px;
+}
+.register-form-btn {
+    margin-top: 30px;
+}
+.register-form input[type="checkbox"] {
+    margin-right: 10px;
+}
+.register-form-btn{
+    text-align: center
+}
+.register-form-btn button {
+    background: #e69603 none repeat scroll 0 0;
+    border: 1px solid #e69603;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 17px;
+    padding: 12px 18px;
+    text-transform: capitalize;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+.register-form-btn button:hover {
+    background: #0b776d none repeat scroll 0 0;
+}
+.register-form a {
+    float: right;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.register-form a:hover{
+    color: #e69603
+}
+
+/*================================================
+34 - CONTACT PAGE ONE CSS
+==================================================*/
+
+.contact-top-details {
+    margin-bottom: 20px;
+}
+.contact-top-details > h3, .finance-contact-desc > h3, .contact3-left-form > h3, .contact3-page-details > h3 {
+    color: #333;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 10px
+}
+.contact-page-form  > form {
+    background: #fff none repeat scroll 0 0;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+    margin-top: 30px;
+    padding: 30px 50px;
+}
+.contact-page-form form label, .contact3-left-form form label{
+    color: #333;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.contact-page-form form p input[type="text"], .contact-page-form form p input[type="email"]{
+    background: transparent none repeat scroll 0 0;
+    border: 1px solid #ddd;
+    height: 40px;
+    padding: 5px 10px;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    width: 100%;
+}
+.contact-page-form form p input:focus, .contact-page-form form textarea:focus{
+    border: 1px solid #e69603 ;
+}
+.contact-page-form form textarea {
+    background: transparent none repeat scroll 0 0;
+    border: 1px solid #ddd;
+    height: 120px;
+    padding: 5px 10px;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    width: 100%;
+}
+.contact-page-form form p button {
+    background: #e69603 none repeat scroll 0 0;
+    border: 1px solid #e69603;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 17px;
+    padding: 12px 18px;
+    text-transform: capitalize;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+.contact-page-form form p button:hover {
+    background: #0b776d none repeat scroll 0 0;
+}
+.contact-page-form form p {
+    margin-top: 15px;
+}
+.contact-page-right {
+    margin-top: 30px;
+}
+.contact-page-right h4 i {
+    color: #e69603 ;
+    margin-right: 5px
+}
+.single-contact-right {
+    margin-bottom: 0px
+}
+.contact-page-right h4 {
+    font-size: 17px;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 10px
+}
+.contact-page-right p > a:hover{
+    color: #e69603
+}
+.weekly-subscribe {
+    margin-top: 50px;
+}
+.weekly-subscribe form {
+    position: relative;
+    width: 100%;
+    height: 40px
+}
+.weekly-subscribe form input[type="text"] {
+    border: 1px solid #ddd;
+    color: #000;
+    height: 100%;
+    padding: 5px 90px 5px 10px;
+    width: 100%;
+}
+.weekly-subscribe form button {
+    background: #e69603 none repeat scroll 0 0;
+    border: medium none;
+    color: #fff;
+    font-size: 20px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    width: 18%;
+    top: 0
+}
+.weekly-subscribe form button:hover{
+    background: #0b776d none repeat scroll 0 0;
+}
+.weekly-subscribe form {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.get-connected-with {
+    margin-top: 40px;
+}
+.get-connected-with ul{
+    margin-top: 20px
+}
+.get-connected-with li {
+    display: inline-block;
+    margin: 0px 5px;
+}
+.get-connected-with a {
+    width: 40px;
+    height: 40px;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    line-height: 40px;
+    background: #eee;
+    color: #555;
+}
+.get-connected-with a:hover{
+    background: #e69603 none repeat scroll 0 0;
+    color: #fff
+}
+#googleMap {
+   width: 100%;
+   height: 370px;
+ }
+
+/*================================================
+35 - CONTACT PAGE TWO CSS
+==================================================*/
+
+.finance-contact-form-right{
+    margin-top: 0
+}
+.finance-contact-desc {
+    margin-bottom: 50px;
+}
+.single-contact-left:first-child {
+    margin-top: 0;
+}
+.single-contact-left {
+    background: #fff none repeat scroll 0 0;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+    margin-top: 20px;
+    padding: 20px;
+}
+.contact-icon {
+    background: #f9f9f9 none repeat scroll 0 0;
+    color: #e69603;
+    display: table-cell;
+    float: left;
+    font-size: 30px;
+    height: 75px;
+    line-height: 75px;
+    margin-right: 10px;
+    text-align: center;
+    width: 75px;
+}
+.contact-text > h4 {
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.contact-text > p {
+    font-size: 15px;
+    line-height: 26px;
+}   
+.contact-text > span {
+    color: #333;
+}
+.finance-contact-form-right > form {
+    background: #fff none repeat scroll 0 0;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+    padding: 30px 50px;
+    margin-top: 0
+}
+.finance-contact-form-right form p {
+    margin: 10px 0;
+}
+.finance-contact-form-right input {
+    background: #fafafa none repeat scroll 0 0;
+    border: medium none;
+    height: 45px;
+    padding: 5px 10px;
+    width: 100%;
+}
+.finance-contact-form-right textarea {
+    background: #fafafa none repeat scroll 0 0;
+    border: medium none;
+    height: 120px;
+    padding: 5px 10px;
+    width: 100%;
+}
+.finance-contact-form-right button {
+    background: #e69603 none repeat scroll 0 0;
+    border: 1px solid #e69603;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 17px;
+    padding: 12px 18px;
+    text-transform: capitalize;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+.finance-contact-form-right button:hover{
+    background: #0b776d none repeat scroll 0 0;
+}
+
+/*================================================
+36 - CONTACT PAGE THREE CSS
+==================================================*/
+
+.contact3-page-details {
+    margin-top: 40px;
+}
+.contact-left-form > form {
+    margin-top: 30px;
+}
+.contact3-left-form input{
+    background: transparent none repeat scroll 0 0;
+    border: 1px solid #ddd;
+    height: 45px;
+    padding: 5px 10px;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    width: 100%;
+}
+.contact3-left-form form input:focus, .contact3-left-form form textarea:focus{
+    border: 1px solid #e69603 ;
+}
+.contact3-left-form form textarea {
+    background: transparent none repeat scroll 0 0;
+    border: 1px solid #ddd;
+    height: 120px;
+    padding: 5px 10px;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    width: 100%;
+}
+.contact3-left-form form p {
+    margin-top: 15px;
+}
+.contact3-left-form button{
+    background: #e69603 none repeat scroll 0 0;
+    border: 1px solid #e69603;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 17px;
+    padding: 12px 18px;
+    text-transform: capitalize;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;    
+}
+.contact3-left-form button:hover{
+    background: #0b776d none repeat scroll 0 0;
+}
+.contact-para {
+    margin-top: 30px;
+}
+.contact-para > p {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+.contact-para p i {
+    color: #e69603;
+    font-size: 18px;
+    line-height: 30px;
+    margin-right: 10px;
+    text-align: center;
+    width: 20px;
+}
+.contact-para p > span {
+    color: #000;
+    display: inline-block;
+    width: 75px;
+    font-weight: 600
+}
+.contact-para a:hover{
+    color: #e69603;
+}
+
+.whyus {
+    color:#fff;
+    padding: 30px 20px 0;
+}
+
+    .whyus img {
+        margin-bottom: 20px;
+    }
+
+.whyus h4 {
+    padding-bottom: 10px;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.pricing {
+    text-align:center;
+    margin-top:30px;
+}
+
+.pricing .box{
+    box-shadow: 0 0 1rem 0px rgba(2, 3, 3, 0.53);
+}
+.pricing h4 {
+    font-size: 16px;
+    padding: 10px 0;
+    background: rgba(230, 150, 4, 0.18);
+    color: #bb0000;
+    font-weight: normal;
+}
+
+.pricing .price {
+    color: #000000;
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+    background-color: rgba(243, 192, 77, 0.82);
+    padding: 10px 0;
+}
+
+.pricing .options {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    border-top: 0.0625rem solid #f3f1f1;
+    color: #2f2f2f;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.pricing .options li {
+    border-bottom: 1px solid #e8e8e8;
+    position: relative;
+    padding: 7px 0;
+    list-style: none;
+}
+
+.pricing .options i{
+    display: inline-block;
+    color: #e69603;
+    margin-right: 5px;
+}

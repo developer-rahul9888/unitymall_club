@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "319124449251",
+    "project_id": "flipcard-df6d3",
+    "storage_bucket": "flipcard-df6d3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:319124449251:android:830fcb3607af608ed222d6",
+        "android_client_info": {
+          "package_name": "com.flipcard.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "319124449251-cjv64d6nj4il13lvoeo5rdisba5mvf97.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.flipcard.app",
+            "certificate_hash": "d7169e279cc51d96b6dec6dd5d4f6a3d0a535344"
+          }
+        },
+        {
+          "client_id": "319124449251-iab714reb6d54rsknc47lbke0h35m9l7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB69vY942naady-VbBKQ2tJtfeckWGhkHQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "319124449251-iab714reb6d54rsknc47lbke0h35m9l7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

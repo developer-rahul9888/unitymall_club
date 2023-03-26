@@ -1,0 +1,403 @@
+﻿.flipcard {
+	position: relative;
+	padding-bottom: 0px;
+	width: 100%;
+	margin-bottom: 51px;
+	float: left;
+	/* margin-top: -18px; */
+}
+.card__front {
+	background: #fff;
+	border-radius: 5px;
+}
+.rback  {
+	height: 300px;
+	background-size: cover;
+	background-image: linear-gradient(to right top, #d86317, #cd2137, #ad0053, #76006a, #000775);
+}
+
+.card__front, .card__back {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+}
+
+.heading h1, .heading h2, .heading h3, .heading h4 {
+	font-size: 18px;
+	color: #000;
+	padding: 0;
+	margin: 0;
+	text-transform: capitalize;
+	font-weight: 400;
+	padding-top: 3px;
+}
+.recharge-bills .tabs {
+	width: 100%;
+	overflow: auto;
+	overflow-y: hidden;
+	-webkit-overflow-scrolling: touch;
+	background: #c61f22;
+}
+.recharge-bills .nav-tabs {
+	text-align: center;
+}
+
+
+.recharge-bills .nav-tabs > li > a {
+	padding: 0;
+	margin: 0;
+	font-size: 13px;
+	color: #f5f9f9;
+	word-break: break-all;
+	word-wrap: break-word;
+	border: none;
+	font-weight: 500;
+}
+
+.btn-block {
+	width: 186px;
+	background: #262626 !important;
+	border-color: #2a2a2a !important;
+	margin-top: 20px;
+}
+.recharge-bills .nav-tabs i.mobile {
+	background-position: -85px 0;
+}
+.recharge-bills .nav-tabs i {
+	width: 55px;
+	height: 55px;
+	display: block;
+	margin: 0 auto 3px;
+}
+.nav.nav-tabs i {
+	font-size: 30px;
+	padding-top: 12px;
+	color: #fff;
+}
+#recharge {
+	margin-bottom: 0;
+	/* margin-top: 31px; */
+}
+.recharge1 {
+	margin-top: -60px;
+	position: relative;
+	z-index: 999;
+}
+#recharge input {
+	display: none;
+}
+.active.operator-radio {
+	background: #fff;
+}
+.modal-backdrop.in {
+	position: relative;
+}
+.modal-dialog.wd {
+	width: 45% !important;
+	float: none !important;
+	text-align: center;
+	margin-right: auto !important;
+}
+.active.operator-radio label {
+	color: black;
+}
+#sh_plan h3 {
+	margin-bottom: 15px;
+}
+.plan-cnt {
+	background: #dddddd24;
+	border: 1px solid #dbd6d6;
+}
+.nav.nav-tabs.list.rc_web {
+	background: #000775;
+	padding: 9px;
+}
+#mobile p {
+	margin-bottom: 0;
+}
+.alert {
+	border-radius: 0;
+	margin-bottom: 2rem;
+	padding: 1.4rem 1.5rem;
+	margin-top: 20px;
+}
+.amtvalue {
+	text-align: left;
+	border: 1px solid #00b9f5;
+	background: #fff;
+	color: #00b9f5;
+	font-size: 14px;
+	border-radius: 4px;
+	cursor: pointer;
+	width: 74px;
+}
+.amtvalue:hover {
+	background: #00b9f5;
+	color: #fff;
+}
+
+.field-mobilerecharge-operator {
+	margin-top: 10px !important;
+}
+
+
+.operator-radio label {
+	color: #fff;
+	padding: 0 11px;
+}
+.plan-cnt li label {
+	margin-right: 4px;
+}
+#mobilerecharge-service_number {
+	max-width: 520px;
+}
+.active.operator-radio i {
+	color: black;
+}
+.nav.nav-tabs li {
+	margin: 7px 30px;
+	margin-top: 10px;
+}
+.br_plan {
+	margin-left: 16px;
+}
+.foot-back {
+	text-align: center;
+}
+.sprite {
+	background-image: url(../images/sprite.png);
+}
+.icon-bg {
+	background: #eff2f3;
+	border: 1px solid #e0e0e0;
+	color: #686a6a;
+	border-radius: 100%;
+	overflow: hidden;
+}
+.recharge-bills .nav-tabs > li > a {
+	font-size: 13px;
+	word-break: break-all;
+	word-wrap: break-word;
+	font-weight: 500;
+	background: none;
+}
+.recharge-bills .nav-tabs i.landline {
+	background-position: -89px -34px;
+}
+.recharge-bills .nav-tabs i.dth {
+	background-position: -87px -67px;
+}
+.recharge-bills .nav-tabs i.datacard {
+	background-position: -89px -100px;
+}
+.recharge-bills .nav-tabs i.gas {
+	background-position: -86px -132px;
+}
+.recharge-bills .nav-tabs i.electricity {
+	background-position: -86px -166px;
+}
+.recharge-bills .nav-tabs i.broadband {
+	background-position: -463px -392px;
+}
+.recharge-bills .tab-content {
+	padding: 40px !important;
+	min-height: 230px;
+	border: 1px solid #d9cfcf;
+	margin: 0;
+}
+.recharge-bills .input-group .input-group-addon, .recharge-bills .input-group .form-control, .recharge-bills .form-group .form-control {
+	border-color: #d4d4d4;
+}
+.form-group .form-control, .form-group .select-custom {
+	margin-bottom: 0;
+}
+.form-control {
+	/*padding: 1.25rem 1.5rem;*/
+	font-size: 1.4rem;
+	line-height: 1.5;
+	font-weight: 400;
+	font-family: "Poppins",sans-serif;
+	color: #555;
+	background-color: #fff !important;
+	border: 1px solid #dfdfdf !important;
+	border-radius: 0;
+	margin-bottom: 1rem;
+	transition: all .3s;
+	max-width: 480px !important;
+	 height: 50px !important; 
+}
+#amount {
+	width: 90%;
+}
+.popup-loader {
+	background: rgba(0,0,0,0.3);
+	position: fixed;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	z-index: 1080;
+	padding: 0;
+	top: 0;
+}
+.loader img, .popup-loader img {
+	-webkit-animation: rotation 2s infinite linear;
+	-moz-animation: rotation 2s infinite linear;
+	animation: rotation 2s infinite linear;
+	width: 50px;
+}
+.loader img, .popup-loader img {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+.radio input[type="radio"]:not(:checked), .radio input[type="radio"]:checked {
+	position: absolute;
+	left: -9999px;
+}
+.radio input[type="radio"]:not(:checked) + label, .radio input[type="radio"]:checked + label {
+	position: relative;
+}
+.radio input[type="radio"] + label {
+	padding-left: 20px;
+	margin-right: 10px;
+}
+.radio input[type="radio"]:checked + label::after {
+	content: '';
+	background: #1073da;
+	top: 5px;
+	position: absolute;
+	left: 4px;
+	transition: all .2s;
+	width: 8px;
+	height: 8px;
+	border-radius: 100%;
+}
+.radio input[type="radio"]:not(:checked) + label::before, .radio input[type="radio"]:checked + label::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 1px;
+	width: 16px;
+	height: 16px;
+	border: 2px solid #aaa;
+	background: #fff;
+	border-radius: 10px;
+}
+.steps {
+	color: #e5e5e5;
+	float: right;
+	margin-top: 10px;
+	margin-left: 0;
+}
+.steps li {
+	float: left;
+	position: relative;
+	margin: 0 7px;
+	padding: 0;
+}
+.steps li a.active {
+	border: 1px solid #ccc;
+	border-radius: 100%;
+	padding: 1px 0 0 0;
+	background: #014b92;
+	color: #fff;
+	text-decoration: none;
+}
+.steps li a {
+	font-size: 12px;
+	width: 20px;
+	height: 20px;
+	display: block;
+	text-align: center;
+}
+.space {
+	min-height: 12px;
+}
+.form-group {
+	margin-bottom: 20px;
+}
+.input-group {
+	width: 100%;
+}
+.recharge-bills .input-group .input-group-addon, .recharge-bills .input-group .form-control, .recharge-bills .form-group .form-control {
+	border-color: #d4d4d4;
+}
+.form-group .field-mobilerecharge-amount input.form-control, .form-group .field-mobilerecharge-service_number input.form-control {
+	border-radius: 0 4px 4px 0 !important;
+}
+.recharge-bills .input-group .input-group-addon, .recharge-bills .input-group .form-control, .recharge-bills .form-group .form-control {
+	border-color: #d4d4d4;
+}
+.has-error .help-block, .help-block, .has-success .alert.alert-danger {
+	font-size: 12px;
+	color: #f13a3e;
+	line-height: 18px;
+	background: url(../images/error-image.png) no-repeat 0 0;
+	padding-left: 22px;
+}
+.has-error .form-control, .recharge-bills .has-error .input-group .input-group-addon, .has-error .input-group .input-group-addon {
+	border-color: #f13a3e !important;
+	color: #666;
+}
+.has-success .form-control, .has-error .form-control {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+select, select.with-arrow {
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	background: #fff url(../images/select-arrow.gif) no-repeat right 0px !important;
+	cursor: pointer;
+	padding-right: 44px !important;
+}
+.form-control {
+	height: 38px;
+}
+.input-group-addon.rupee {
+	font-size: 22px;
+	font-weight: 400;
+}
+.input-group-addon {
+	padding: 2px 7px;
+	min-width: 39px;
+}
+.operator-radio label {
+	text-transform: capitalize;
+	font-family: poppins;
+}
+@media screen and (max-width:768px) {
+.modal-dialog.wd {
+	width: 94% !important;
+}
+.recharge1 {
+	margin-top: -23px;
+}
+.recharge-bills .tab-content {
+	padding-top: 10px !important;
+}
+#amount {
+	width: 100%;
+}
+.nav.nav-tabs li {
+	margin: 0 1px;
+}
+.recharge-bills .nav-tabs i {
+	height: 30px;
+	padding-top: 5px;
+}
+.operator-radio label {
+	color: #fff;
+	padding: 0 7px;
+	text-transform: capitalize;
+	font-family: poppins;
+	font-size: 12px;
+}
+}
+/******recharge sc end***********/

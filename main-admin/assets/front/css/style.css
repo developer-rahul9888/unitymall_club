@@ -1,0 +1,195 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body {font-family: 'Open Sans', sans-serif;}
+
+
+.user_account{list-style:none;}
+.user_account li{list-style:none;}
+.user_account li ul{display:none;}
+.user_account li:hover ul{display:block; position:absolute;top:35px;z-index:99;padding:0px; background:#F5F5F5}
+.user_account .useracunt li{display:block;width:100%}
+.user_account .useracunt li a{padding:10px 5px; display:block;}
+
+.user_info{float:left;
+width:100%;}
+.proc_item_list{padding:5px 0;margin:2px 0; border-bottom:1px solid #e2e2e2;}
+
+#lean_overlay {
+    position: fixed;
+    z-index:100;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    background: #000;
+    display: none;
+}
+.r{padding:2px 4px; background:#f5f5f5;}
+hr {
+    background:#000;
+    border: 1px solid hsl(0, 0%, 0%);
+    display: block;
+    width: 100%;
+}
+.popupContainer{
+	position:absolute;
+	width:330px;
+	height: auto;
+	left:45%;
+	top:20px;
+	background: #FFF;
+}
+.popupBody .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"], .radio input[type="radio"], .radio-inline input[type="radio"]{margin-left:0px}
+.popupBody .user_login input[type="checkbox"] + label {float: right;}
+#modal_trigger {  background: #ff0000; color: #fff;  display: block; font-weight: bold; margin: 28px auto;    padding: 10px;  text-align: center;  width: 100%;}
+
+.btn_red {background: #ED6347; color: #FFF;}
+
+
+.btn_red:hover {background: #C12B05;}
+
+a.btn {color:#666; text-align: center; text-decoration: none;}
+a.btn_red {color: #FFF;}
+
+.one_half {width:50%; display: block; float:left;}
+.one_half.last {width:45%; margin-left:5%;}
+
+/* Popup Styles*/
+.popupHeader {font-size:16px; text-transform: uppercase;}
+.popupHeader {background:#F4F4F2; position:relative; padding:10px 20px; border-bottom:1px solid #DDD; font-weight:bold;}
+.popupHeader .modal_close {position: absolute; right: 0; top:0; padding:10px 15px; background:#E4E4E2; cursor: pointer; color:#aaa; font-size:16px;}
+
+.popupBody {padding:20px;}
+
+
+/* Social Login Form */
+.social_login {display:none;}
+.social_login .social_box {display:block; clear:both; padding:10px; margin-bottom: 10px; background: #F4F4F2; overflow: hidden;}
+.social_login .icon {display:block; width:10px; padding:5px 10px; margin-right: 10px; float:left; color:#FFF; font-size:16px; text-align: center;} 
+.social_login .fb .icon {background:#3B5998;}
+.social_login .google .icon {background:#DD4B39;}
+.social_login .icon_title {display:block; padding:5px 0; float:left; font-weight: bold; font-size: 16px; color:#777;}
+.social_login .social_box:hover {background: #E4E4E2;}
+
+.centeredText {text-align: center; margin: 20px 0; clear: both; overflow: hidden; text-transform: uppercase;}
+
+.action_btns {clear:both; overflow: hidden;}
+.action_btns a {display: block;}
+
+/* User Login Form */
+.user_login {display: block;}
+
+.user_login label {display: block; margin-bottom:5px;}
+.user_login input[type="text"], .user_login input[type="email"], .user_login input[type="password"] {display: block; width:90%; padding: 10px; border:1px solid #DDD; color:#666;}
+.user_login input[type="checkbox"] {float:left; margin-right:5px;}
+.user_login input[type="checkbox"]+label {float:right;}
+
+.user_login .checkbox {margin-bottom: 10px; clear: both; overflow: hidden;}
+.forgot_password {display:block; margin: 20px 0 10px; clear: both; overflow: hidden; text-decoration: none; color:#ED6347;}
+
+/* User Register Form */
+.user_register {display: none;height:330px;overflow-y:scroll}
+
+.user_register label {display: block; margin-bottom:5px;}
+.user_register input[type="text"], .user_register input[type="email"], .user_register input[type="password"] {display: block; width:90%; padding: 10px; border:1px solid #DDD; color:#666;}
+.user_register input[type="checkbox"] {float:left; margin-right:5px;}
+.user_register input[type="checkbox"]+label {float:right;}
+
+.user_register .checkbox {margin-bottom: 10px; clear: both; overflow: hidden;}
+
+
+/*Forgetpassword */
+.frget_password {display: none;}
+.frget_password label {display: block; margin-bottom:5px;}
+.frget_password input[type="text"], .frget_password input[type="email"], .frget_password input[type="password"] {display: block; width:90%; padding: 10px; border:1px solid #DDD; color:#666;}
+.frget_password input[type="checkbox"] {float:left; margin-right:5px;}
+.frget_password input[type="checkbox"]+label {float:left;}
+
+.frget_password .checkbox {margin-bottom: 10px; clear: both; overflow: hidden;}
+
+
+
+
+.img-responsive{width:100%;}
+a:hover{text-decoration:none;}
+.padding-none{padding:0px;}
+
+.navbar-default{background:none; border:none; box-shadow:none;}
+.navbar-nav > li > a{padding:4px 0px 4px 8px; }
+.navbar-nav > li{display:block;width:100%;}
+/*.navbar-nav li a:hover{background:url(../images/arrow.png) no-repeat 0px 10px;}
+.navbar-nav li a.active{background:url(../images/arrow.png) no-repeat 0px 10px;}*/
+.logo{ }
+.modal-body{padding:14px 15px 50px}
+.mod_item {  float: left; list-style: outside none none; padding: 0px 5px;   width: 23%;}
+.mod_item > input {  margin: 0 6px;}
+.item{width:80%;float:left;}
+.product-section .r.closed{background:url('../../front/images/closed.png') no-repeat right center; height:50px;}
+.add_to_cart{float:left;width:20%;text-align:center;margin-top:35px;}
+.category{clear:both;}
+.mrg_all{margin:5px 0}
+.item-list{padding:0px;}
+.item-list li{list-style:none;}
+.item-list li a{color:#999898; font-weight:300; padding:3px 0px; display:block;}
+.product-list{padding:0px;}
+.product-list li{list-style:none; border-bottom:1px solid hsl(0, 0%, 93%); padding:10px 0px;}
+.food-item p{color:hsl(208, 7%, 59%); }
+.food-item h5{margin-top:0px;}
+.food-item h5 span{color:#}
+.rate button{background:none; border:1px solid #009933; color:#009933; border-radius:20px;margin-left:10px;}
+.rate p{margin-bottom:0px;}
+.rate{margin-top:15px;}
+.panel.panel-default.home_panel { bottom: 115px; position: absolute;right: 150px;}
+/*.snaks-section{margin:40px 0px;}*/
+.radio-btn .glyphicon{font-size:19px;}
+aside .section-first p{font-size:13px; margin:0px;}
+aside .section-first .btn-group .btn{ margin:7px 15px 0 0 ; border-radius:4px !important; padding-right:20px;}
+aside .section-first .btn-group .btn img{margin-right:5px;}
+aside .section-first article{display:inline-block;}
+aside .section-first article p{margin-bottom:0px;}
+.radio-btn{padding:5px 6px; border:1px solid #ccc; border-radius:3px;}
+aside .section-first label{ font-weight:normal; }
+aside .section-first label span{font-size:13px; margin-left:10px;}
+aside .section-first h5{text-align:center; font-weight:bold;}
+aside .section-first select{ box-shadow:0 1px 1px hsla(0, 0%, 0%, 0.075) inset; padding:5px; border-radius:3px 0 0 3px; border:1px solid #ccc;}
+aside .section-first .form-group{width:53%; float:left; margin-left:4px;}
+aside .section-first .panel-body{padding:15px 8px;}
+
+aside .section-second .panel-heading{ background-color:hsl(71, 96%, 36%); color:#fff;}
+
+aside .section-fifth .alert p span{float:right; margin-right:-10px;}
+aside .section-fifth .alert{padding:0 18px 4px 0px; margin-bottom:6px; border-bottom:2px solid #ccc; border-radius:0px;}
+aside .section-fifth .alert p{font-size:13px;}
+
+h3.category-title {border-bottom: 1px solid #ccc;margin: 0;padding-bottom: 4px;}
+
+.tabs{padding-left:0px;}
+.tabs li{list-style:none;display:inline-block;cursor:pointer;padding:3px 8px;maring-right:10px;}
+.tabs li.active{font-weight:bold;}
+.advan-search-div .tab{display:none;}
+
+@media screen and (max-width:1024px)
+{
+	.container{width:auto;}
+	.radio-btn{padding:5px 9px;}
+}
+@media screen and (max-width:900px)
+{
+	.radio-btn{padding:5px 8px;}
+}
+@media screen and (min-width:768px) and (max-width:850px){
+.panel.panel-default.home_panel { bottom: 19px; right: 38px;}
+}
+@media screen and (max-width:767px)
+{
+	container{width:auto;}
+	.item-product .col-sm-4{width:100%;}
+	.item-product, .item-product .col-sm-8{width:100%; margin-bottom:10px;}
+	aside .col-sm-4{width:100% !important;}
+	.radio-btn{padding:5px 9px;}
+	.navbar-nav li{width:auto;}
+	.navbar-nav > li > a{padding:4px 6px 4px 8px;}
+	.navbar-default{margin-bottom:0px;}
+	.panel.panel-default.home_panel{position:relative;bottom:0;right:0;left:0}
+}
+
